@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Basic styling for each segment */
+.segment {
+  width: 20px;
+  height: 5px;
+  background-color: gray;
+  margin: 2px;
+}
+
+/* Define horizontal and vertical segments */
+.horizontal {
+  width: 40px;
+}
+
+.vertical {
+  height: 40px;
+}
+
+/* The 'on' class will light up the segment */
+.on {
+  background-color: red; /* Choose a color for illumination */
+}
+
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#digit {
+  position: relative;
+  width: 120px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+/* Common segment styling */
+.segment {
+  position: absolute;
+  background-color: #242430;
+  transition: background-color 0.3s ease;
+}
+
+.on {
+  background-color: red;
+}
+
+.horizontal {
+  width: 100px;
+  height: 20px;
+  border-radius: 1px;
+}
+
+.vertical {
+  width: 20px;
+  height: 80px;
+  border-radius: 1px;
+}
+
+/* Position each segment */
+#a {
+  top: 0;
+  left: 10px;
+}
+
+#b {
+  top: 10px;
+  right: 0;
+}
+
+#c {
+  bottom: 10px;
+  right: 0;
+}
+
+#d {
+  bottom: 0;
+  left: 10px;
+}
+
+#e {
+  bottom: 10px;
+  left: 0;
+}
+
+#f {
+  top: 10px;
+  left: 0;
+}
+
+#g {
+  top: 90px;
+  left: 10px;
+}
